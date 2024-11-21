@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Import Employee Availability</title>
+</head>
+<body>
+    <h2>Upload Excel File</h2>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="file">
+        <button type="submit">Import</button>
+    </form>
+</body>
+</html>
